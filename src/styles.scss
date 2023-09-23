@@ -1,0 +1,15 @@
+@import "./components/home/home.scss";
+@import "./components/levels/levels.scss";
+@import "./components/navBar/navBar.scss";
+@import "./components/courses/courses.scss";
+@import "./components/course/course.scss";
+@import "./components/foro/foro.scss";
+@import "./components/theChat/theChat.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}

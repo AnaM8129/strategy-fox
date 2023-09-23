@@ -1,0 +1,140 @@
+@import "../../variables.scss";
+
+.main-foro {
+  @extend .main-home;
+  background-color: $white;
+  height: 180vh;
+
+  &_header {
+    width: 100%;
+    height: 130px;
+    background-color: $green;
+    display: flex;
+    border-radius: 5px;
+    align-items: end;
+    justify-content: space-around;
+
+    &_div {
+      width: 100px;
+      height: 100px;
+      background-color: $white;
+      border-radius: 50%;
+    }
+
+    &_img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &_title {
+      color: $white;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+  &_username {
+    color: $orange;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &_text {
+    color: $gray;
+    font-size: 15px;
+  }
+
+  &_followContainer {
+    // background-color: red;
+    display: flex;
+    gap: 20px;
+
+    &_div {
+      //background-color: rgb(55, 0, 255);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  &_numbers {
+    color: $gray;
+  }
+
+  &_letters {
+    font-size: 12px;
+    color: $medium-gray;
+  }
+
+  &_linksContainer {
+    //background-color: gray;
+    display: flex;
+    border-bottom: 2px solid $green;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &_text {
+      font-size: 12px;
+      color: $green;
+    }
+  }
+
+  &_message2 {
+    border: 2px solid $white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  &_message {
+    background-color: $light-green;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    &_icon {
+      color: $white;
+      font-size: 55px;
+      margin-right: 10px;
+    }
+
+    &_icon2 {
+      color: $white;
+      font-size: 25px;
+      margin-right: 10px;
+    }
+
+    &_name {
+      color: $white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    &_text {
+      color: $white;
+      font-size: 12px;
+    }
+
+    &_links {
+      //background-color: blue;
+      display: flex;
+      justify-content: end;
+      gap: 15px;
+
+      &_link {
+        font-size: 20px;
+        color: $green;
+      }
+    }
+  }
+}
+
+.close-session {
+  border: none;
+  background-color: $light-gray;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "Jost", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: $gray;
+}

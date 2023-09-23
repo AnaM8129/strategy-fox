@@ -1,0 +1,95 @@
+@import "../../variables.scss";
+.main-levels {
+  @extend .main-home;
+
+  &_userContainer {
+    // background-color: green;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    &_icon {
+      color: $light-gray;
+      font-size: 35px;
+    }
+  }
+
+  &_nameContainer {
+    //background-color: red;
+    color: $white;
+    font-size: 15px;
+  }
+
+  &_line {
+    color: $white;
+    width: 80%;
+  }
+
+  &_text {
+    color: $white;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  &_barContainer {
+    //background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &_bar {
+    width: 80%;
+    height: 5px;
+    background-color: $light-gray;
+    align-self: center;
+    border-radius: 5px;
+
+    &_secondBar {
+      width: 40%;
+      height: 100%;
+      background-color: $orange;
+      border-radius: 5px;
+    }
+  }
+
+  &_completedText {
+    color: $white;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  &_levelsSection {
+    background-color: $white;
+    border-radius: 5px;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+  }
+  &_level {
+    background-color: $orange;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0 0 0;
+
+    &_icon {
+      color: $green;
+      font-size: 30px;
+    }
+
+    &_number {
+      color: $white;
+      font-weight: bold;
+      font-size: 25px;
+    }
+    &_text {
+      color: $gray;
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+}

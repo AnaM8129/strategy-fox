@@ -1,0 +1,39 @@
+@import "../../variables.scss";
+.navbar {
+  background-color: $green;
+  //display: flex;
+  bottom: 0;
+  border-radius: 5px;
+  position: fixed;
+  width: 95%;
+  z-index: 100;
+  border-top: 2px solid $light-gray;
+  margin-left: -5px;
+
+  &_ul {
+    width: 95%;
+    // background-color: blue;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 10px;
+  }
+
+  &_icon {
+    color: $light-gray;
+    font-size: 25px;
+  }
+
+  &_iconActive {
+    color: $light-gray;
+    font-size: 25px;
+    background-color: blue;
+  }
+}
+
+.navlink {
+  background-color: #12352e;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

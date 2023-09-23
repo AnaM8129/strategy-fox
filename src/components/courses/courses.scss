@@ -1,0 +1,59 @@
+@import "../../variables.scss";
+.main-courses {
+  @extend .main-home;
+
+  &_section {
+    background-color: $light-gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+  }
+
+  &_title {
+    color: $green;
+  }
+
+  &_course {
+    //background-color: red;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  &_number {
+    color: $green;
+    border: 2px solid $green;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  &_name {
+    color: $green;
+    font-size: 15px;
+  }
+
+  &_iconContainer {
+    background-color: $green;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+
+    &_icon {
+      color: $light-gray;
+    }
+  }
+
+  &_iconContainer2 {
+    @extend .main-courses_iconContainer;
+    background-color: gray;
+  }
+}

@@ -1,0 +1,66 @@
+.input-container {
+  position: fixed;
+  bottom: 10%;
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+
+  &_input {
+    border: none;
+    outline: none;
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: $white;
+    border: 2px solid $light-gray;
+    color: $gray;
+    font-family: "Jost", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    &::placeholder {
+      color: $gray;
+      font-family: "Jost", sans-serif;
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+    }
+    // margin-right: 10px;
+  }
+
+  &_button {
+    background-color: $orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+  }
+
+  &_icon {
+    color: $white;
+    z-index: 100;
+    font-size: 25px;
+  }
+}
+.messages-container {
+  //background-color: greenyellow;
+  display: flex;
+  flex-direction: column;
+  //display: grid;
+  //   display: flex;
+  //   flex-direction: column;
+}
+
+.messages-expert {
+  color: $white;
+  background-color: $green;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.messages-me {
+  color: $white;
+  background-color: $orange;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
